@@ -24,34 +24,31 @@
 - Map showing current location and location of venue when address is clicked
 
 
-
-
-
 ### **_Credits_**
 to be filled in.
 
-### **_Wireframe_**
+[**_Wireframe_**](https://www.figma.com/file/uFruB2uyPT3lMHBsNJFDsd/Sing!NYCMetro-Wireframe?type=design&node-id=0%3A1&mode=design&t=m56g8XE5HHSsaWJl-1)
 
 **Home page** with navigation to browse venues (read only if not logged in)
-![landing page](../sing_nyc_metro_app/public/images/Home%20Page.png)
+![landing page](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Home%20Page.png?raw=true)
 
 **Browse Venues by Area**
-![browse venues](../sing_nyc_metro_app/public/images/Browse%20Venues.png)
+![browse venues](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Browse%20Venues.png?raw=true)
 
 
 **Select Venue from List**
-![select venue](../sing_nyc_metro_app/public/images/Select%20Venue%20from%20List.png)
+![select venue](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Select%20Venue%20from%20List.png?raw=true)
 
 **Venue View**
-![Venue](../sing_nyc_metro_app/public/images/Venue%20View.png)
+![Venue](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Venue%20View.png?raw=true)
 
 **Review View** with delete option
-![Review dlt](../sing_nyc_metro_app/public/images/Review%20delete%20opt.png)
+![Review dlt](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Review%20delete%20opt.png?raw=true)
 
 **Add Venue**
-![Add Venue](../sing_nyc_metro_app/public/images/Add%20Venue.png)
+![Add Venue](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Add%20Venue.png?raw=true)
 
 **Map View of Venue**
-![Venue on Map](../sing_nyc_metro_app/public/images/Map%20View.png)
+![Venue on Map](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Map%20View.png?raw=true)
 
 &copy; 2023 Sing! NYC Metro
