@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
     <nav>
+        <a href="/">Sing!NYCMetro</a>
+        <a href="/venues">NYC Metro Areas</a>
         <% if (user) { %>
             <a href="/logout">LOG OUT</a>
         <% } else { %>

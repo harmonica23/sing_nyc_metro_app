@@ -4,7 +4,7 @@ const passport = require('passport');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Sing!NYCMetro' });
+  res.render('landing', { title: 'Sing!NYCMetro' });
 });
 
 // Google OAuth login route
@@ -19,15 +19,15 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect: '/areas',
-    failureRedirect: '/areas'
+    successRedirect: '/venues',
+    failureRedirect: '/venues'
   }
 ));
 
 // OAuth logout route
 router.get('/logout', function(req, res){
   req.logout(function() {
-    res.redirect('/movies');
+    res.redirect('/venues');
   });
 });
 

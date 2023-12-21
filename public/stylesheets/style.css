@@ -7,11 +7,11 @@ a {
   color: #00B7FF;
 }
 
-.login {
+nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
+  align-items: baseline;
+  height: 4vmin;
+  justify-content: space-between;
 }
 
 .login img {

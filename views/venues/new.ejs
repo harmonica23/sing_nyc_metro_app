@@ -1,0 +1,46 @@
+<%- include('../partials/header') %>
+
+<h2>Add a Venue</h2>
+<form action="/venues" method="POST">
+  <label>venue:
+    <input type="text" name="venue">
+<label>venue area
+    <select name="venueArea">
+        <option value="nyc">NYC</option>
+        <option value="long-island">Long Island</option>
+        <option value="westchester">Westchester</option>
+        <option value="nj-metro">NJ Metro</option>
+        <option value="ct-metro">CT Metro</option>
+      </select>
+  </label><br>
+  <label>address:
+    <input type="text" name="address">
+</label><br>
+<label>website:
+    <input type="text" name="address">
+</label><br>
+<label>phone:
+    <input type="text" name="phone">
+  </label><br>
+  <label>venue highlights:
+    <input type="text" name="highlights">
+  </label><br>
+<label>karaoke happens:
+    <select name="karaokeSchedule">
+        <option value="saturdays">Saturdays</option>
+        <option value="sundays">Sundays</option>
+        <option value="mondays">Mondays</option>
+        <option value="tuesdays">Tuesdays</option>
+        <option value="wednesdays">Wednesdays</option>
+        <option value="thursdays">Thursdays</option>
+        <option value="fridays">Fridays</option>
+        <option value="all">Every Day Open</option>
+      </select>
+      <input type="text" name="other">
+</label><br>
+
+  <button type="submit">Add Venue</button>
+</form>
+<p><%= errorMsg %></p>
+
+<%- include('../partials/footer') %>
