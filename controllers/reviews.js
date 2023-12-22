@@ -16,6 +16,22 @@ const create = async (req, res) => {
 };
 
 
+const deleteReview = async (req, res) => {
+    try {
+    const venue = await Venue.findOne({ 'reviews._id': req.params.id, 'reviews.user': req.user._id });
+    if (!venue) return res.redirect('/venues');
+
+    venue.reviews.remove(req.params.id);
+    await venue.save();
+
+    res.redirect(`/venues/${venue._id}`);
+  } catch (err) {
+    console.log(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 module.exports = {
-    create
+    create,
+    delete: deleteReview
 }

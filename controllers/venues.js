@@ -1,7 +1,6 @@
 const Venue = require('../models/venue');
 
 
-
 const areas = (req, res) => {
     res.render('areas/main', {title: 'Areas'});
 }
@@ -50,7 +49,6 @@ const addReview = async (req, res) => {
         res.render('reviews/new', {title: 'Add Review', errorMsg: ''});
     }
 }
-
 
 
 module.exports = {
