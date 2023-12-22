@@ -11,8 +11,16 @@
 
 
 <br><br><h2>Reviews</h2>
+
+<!-- <% venue.reviews.forEach(r => { %>
+<p><%= r.content %></p>
+<p><%= r.rating %></p>
+<p><%= r.user %></p> -->
+
+<% } )  %>
+
 <form id="add-review-form" method="POST"
-  action="/venues/<%= venue._id %>/reviews">
+  action="/reviews/venues/<%= venue._id %>/reviews">
   <label>Add Review:</label>
   <textarea name="content"></textarea>
   <label>Rating:</label>
@@ -25,5 +33,44 @@
   </select>
   <input type="submit" value="Add Review">
 </form>
+
+<% if (venue.reviews.length) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Date</th>
+          <th>Review</th>
+          <th>Rating</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% let total = 0 %>
+        <% venue.reviews.forEach(function(r) { %>
+          <% total += r.rating %>
+          <tr>
+            <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" ><%= r.userName %></td>
+            <td><%= r.createdAt.toLocaleDateString() %></td>
+            <td><%= r.content %></td>
+            <td><%= r.rating %></td>
+            <td>
+              <% if (user?._id.equals(r.user)) { %>
+                <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                  <button type="submit">X</button>
+                </form>
+              <% } %>
+            </td>
+          </tr>
+        <% }); %>
+        <tr>
+          <td colspan="3"></td>
+          <td><strong><%= (total / venue.reviews.length).toFixed(1) %></strong></td>
+        </tr>
+      </tbody>
+    </table>
+  <% } else { %>
+    <h5>No Reviews Yet</h5>
+  <% } %>
 
 <%- include('../partials/footer') %>
