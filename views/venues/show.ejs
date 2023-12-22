@@ -1,5 +1,29 @@
 <%- include('../partials/header') %>
 
+<h1><%= venue.venueName %></h1>
+<h3><%= venue.area %></h3>
+<h3><%= venue.address %></h3>
+<h3><%= venue.website %></h3>
+<h3><%= venue.phone %></h3>
+<h3><%= venue.when %></h3>
+<h3><%= venue.other %></h3>
+<h3><%= venue.highlights %></h3>
 
+
+<br><br><h2>Reviews</h2>
+<form id="add-review-form" method="POST"
+  action="/venues/<%= venue._id %>/reviews">
+  <label>Add Review:</label>
+  <textarea name="content"></textarea>
+  <label>Rating:</label>
+  <select name="rating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5" selected>5</option>
+  </select>
+  <input type="submit" value="Add Review">
+</form>
 
 <%- include('../partials/footer') %>
