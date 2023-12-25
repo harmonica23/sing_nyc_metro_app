@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="/">Sing!NYCMetro</a>
-        <a href="/venues">NYC Metro Areas</a>
+    <ul class="nav-links">
+        <li><a href="/">Sing!NYCMetro</a></li>
+        <li class="center"><a href="/venues">NYC Metro Areas</a></li>
         <% if (user) { %>
-            <a href="/logout">LOG OUT</a>
+            <li class="forward"><a href="/logout">LOG OUT</a></li>
         <% } else { %>
-            <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+            <li class="forward"><a href="/auth/google" class="login">LOG IN&nbsp;<img id="goog" src="https://i.imgur.com/FHjYyi0.png"></a></li>
         <% } %>
-    </nav>
+        </ul>
 </body>
 </html>
+
