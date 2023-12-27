@@ -7,9 +7,9 @@ const areas = (req, res) => {
 
 const index = async (req, res) => {
     const venuesByArea = await Venue.find({area: req.params.area});
-    const capitalizedArea = req.params.area.replace(/-/g, ' ').toUpperCase();
+    const formattedArea = req.params.area.replace(/-/g, ' ');
     console.log(venuesByArea);
-    res.render('areas/index', { title: `${capitalizedArea} VENUES`, venuesByArea }); 
+    res.render('areas/index', { title: `${formattedArea} Venues`, venuesByArea }); 
 };
 
 const show = async (req, res) => {

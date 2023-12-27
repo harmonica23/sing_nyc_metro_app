@@ -9,14 +9,21 @@ body {
   background-image: url('../images/background.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
-  background-repeat: no-repeat;
 }
 
 a {
   color: #754D9D;
+  text-decoration: none;
 }
+
+a:hover {
+  color: #953616;
+}
+
 
 nav {
   padding: 2vmin;
@@ -27,14 +34,58 @@ nav {
 }
 
 .login img {
-  height: 30px;
-}
-
-#goog {
   width: 2vmin;
   height: 2vmin;
 }
 
+section, a {
+  margin-left: 2vmin;
+}
+
+button {
+  padding: 1vmin;
+  cursor: pointer;
+  background-color: rgb(117, 77, 157, 1);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background-color: #953616;
+}
+
+.text-box {
+  background: rgb(117, 77, 157, 0.5);
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.column {
+  width: 48%;
+}
+
+#tagline {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 6vmin;
+  transform: rotate(-12deg);
+  margin-left: 2vmin;
+}
+
+h1 {
+  font-size: 7vmin;
+  margin-left: 2vmin;
+}
+
+/* nav bar styling */
 .nav-links{
   display: flex;
   align-items: center;
@@ -85,4 +136,64 @@ nav {
 .nav-links li.forward a:hover:before{
   transform: scaleX(1);
   transform-origin: left;
+}
+
+/* review form styling */
+.reviews-container {
+  border: 1px solid #ddd;
+  background: rgb(117, 77, 157, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.review {
+  border: 1px solid #eee;
+  background-color: #ffaa1d;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-content {
+  margin-bottom: 10px;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#xButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff5555;
+  color: #fff;
+  border: none;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#xButton:hover {
+  background-color: #cc0000;
 }

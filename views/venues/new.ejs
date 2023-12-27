@@ -1,6 +1,7 @@
 <%- include('../partials/header') %>
 
-<h2>Add a venue Sing! NYC Metro</h2>
+<h2>Add a venue to Sing! NYC Metro</h2>
+<section>
 <form id="new form" action="/venues" method="POST">
 
 <label>Venue:</label>
@@ -9,11 +10,11 @@
 
 <label>Area:</label>
     <select name="area">
-        <option value="nyc">NYC</option>
-        <option value="long-island">Long Island</option>
-        <option value="westchester">Westchester</option>
-        <option value="nj-metro">NJ Metro</option>
-        <option value="ct-metro">CT Metro</option>
+        <option value="NYC">NYC</option>
+        <option value="Long-Island">Long Island</option>
+        <option value="Westchester">Westchester</option>
+        <option value="NJ-metro">NJ Metro</option>
+        <option value="CT-metro">CT Metro</option>
       </select>
 <br>
 
@@ -52,6 +53,8 @@
 
   <button type="submit">Add Venue</button>
 </form>
+</section>
 <p><%= errorMsg %></p>
+</section> 
 
 <%- include('../partials/footer') %>

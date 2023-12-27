@@ -33,7 +33,7 @@ const venueSchema =  new Schema({
     highlights: String,
     area: {
         type: String,
-        enum: ['nyc', 'long-island', 'westchester', 'nj-metro', 'ct-metro']
+        enum: ['NYC', 'Long-Island', 'Westchester', 'NJ-metro', 'CT-metro']
     },
     reviews: [reviewSchema]
 }, {
