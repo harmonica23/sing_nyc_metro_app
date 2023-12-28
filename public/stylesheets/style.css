@@ -16,21 +16,13 @@ body {
 }
 
 a {
-  color: #754D9D;
+  color: white;
   text-decoration: none;
+  font-size: 5vmin;
 }
 
 a:hover {
-  color: #953616;
-}
-
-
-nav {
-  padding: 2vmin;
-  display: flex;
-  align-items: baseline;
-  height: 4vmin;
-  justify-content: space-between;
+  color: rgb(155, 1, 1);
 }
 
 .login img {
@@ -40,12 +32,23 @@ nav {
 
 section, a {
   margin-left: 2vmin;
+  margin-right: 2vmin;
 }
 
-button {
+#venue-info {
+  color: rgb(155, 1, 1);
+  margin-left: 2vmin;
+  margin-top: 1vmin;
+}
+
+#venue-script {
+  font-family: 'Seaweed Script', cursive;
+}
+
+button, #review-submit {
   padding: 1vmin;
   cursor: pointer;
-  background-color: rgb(117, 77, 157, 1);
+  background-color: black;
   color: white;
   border-radius: 5px;
   border: none;
@@ -53,14 +56,9 @@ button {
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
-button:hover {
-  background-color: #953616;
-}
-
-.text-box {
-  background: rgb(117, 77, 157, 0.5);
-  border: 1px solid #eee;
-  border-radius: 8px;
+button:hover, #review-submit:hover {
+  background-color: rgb(155, 1, 1);
+  color: white;
 }
 
 .main-content {
@@ -85,11 +83,15 @@ h1 {
   margin-left: 2vmin;
 }
 
+h3 {
+  font-size: 2.7vmin;
+}
+
 /* nav bar styling */
 .nav-links{
   display: flex;
   align-items: center;
-  background: rgb(117, 77, 157, 0.5);
+  background-color: rgba(0,0,0,0.5);
   padding: 3vmin;
   height: 9vmin;
   margin: 2vmin;
@@ -103,8 +105,8 @@ h1 {
 }
 .nav-links li a{
   position: relative;
-  color: #333;
-  font-size: 2.5vmin;
+  color: white;
+  font-size: 3vmin;
   font-weight: 500;
   padding: 1vmin;
   text-decoration: none;
@@ -141,9 +143,10 @@ h1 {
 /* review form styling */
 .reviews-container {
   border: 1px solid #ddd;
-  background: rgb(117, 77, 157, 0.5);
+  background: rgb(0, 0, 0, 0.5);
   padding: 20px;
   margin-top: 20px;
+  color: white;
 }
 
 .review {
@@ -154,6 +157,7 @@ h1 {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 .review-user {
@@ -176,7 +180,6 @@ h1 {
 .review-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 #xButton {
@@ -197,3 +200,61 @@ h1 {
 #xButton:hover {
   background-color: #cc0000;
 }
+
+/* form styling */
+#add-review-form {
+  color: white;
+  border: 1px solid #ddd;
+  background: rgb(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.text-box, #selector {
+  width: 100%;
+  padding: 1vmin;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2vmin;
+  margin-top: 1vmin;
+  font-size: 1.8vmin;
+}
+
+/* #new-form */
+  #new-form {
+    max-width: 80vmin;
+    margin: 0 auto;
+    padding: 4vmin;
+    background: rgb(0, 0, 0, 0.7);
+    border-radius: 2vmin;
+    box-shadow: 0 0 2vmin rgba(0, 0, 0, 0.1);
+  }
+
+  #add-ven-hl {
+    color: white;
+    font-size: 2.2vmin;
+    margin-bottom: 2vmin;
+  }
+
+  label {
+    display: block;
+    margin-top: 2vmin;
+    font-weight: bold;
+    color: white;
+    font-size: 1.8vmin;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 1vmin;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2vmin;
+    margin-top: 1vmin;
+    font-size: 1.8vmin;
+  }
+
+  #sub-but {
+    margin: 2vmin auto;
+  }

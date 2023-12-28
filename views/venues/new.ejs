@@ -1,8 +1,8 @@
 <%- include('../partials/header') %>
 
-<h2>Add a venue to Sing! NYC Metro</h2>
 <section>
-<form id="new form" action="/venues" method="POST">
+    <form id="new-form" action="/venues" method="POST">
+    <h2 id="add-ven-hl">Add a venue to Sing!NYCMetro's database using the form below:</h2>
 
 <label>Venue:</label>
     <input type="text" name="venueName">
@@ -40,18 +40,24 @@
         <option value="thursdays">Thursdays</option>
         <option value="fridays">Fridays</option>
         <option value="every-day-open">Every Day</option>
+        <option value="by-request">By Request</option>
     </select>
 <br>
 
-<label>Additional info:</label>
-      <input type="text" name="other">
+<label>Frequency:</label>
+<select name="frequency">
+    <option value="daily">Daily</option>
+    <option value="weekly">Weekly</option>
+    <option value="monthly">Monthly</option>
+    <option value="special-event">Special Event</option>
+</select>
 <br>
 
 <label>Venue highlights:</label>
     <input type="text" name="highlights">
 <br>
 
-  <button type="submit">Add Venue</button>
+  <button type="submit" id="sub-but">Submit</button>
 </form>
 </section>
 <p><%= errorMsg %></p>

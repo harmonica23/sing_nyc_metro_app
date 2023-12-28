@@ -2,8 +2,8 @@
 
   <div class="main-content">
     <div class="column">
-      <h1><%= venue.venueName %></h1>
-      <section>
+      <h1 id="venue-script"><%= venue.venueName %></h1>
+      <div id="venue-info">
         <h3><%= venue.area %> area</h3>
         <h3><%= venue.address %></h3>
         <h3><%= venue.website %></h3>
@@ -11,50 +11,46 @@
         <h3>Karaoke days: <%= venue.when %></h3>
         <h3>Frequency: <%= venue.other %></h3>
         <h3>Venue highlights: <%= venue.highlights %></h3>
-      </section>
+      </div>
 
       <br><br>
       <section id="reviewForm">
         <form id="add-review-form" method="POST" action="/reviews/venues/<%= venue._id %>/reviews">
-          <h3>Review this venue:</h3>
+          <h4>Review this venue:</h4>
           <textarea name="content" class="text-box"></textarea>
           <br>
           <label>Rating:</label>
-          <select name="rating">
-            <option value="1">No Go</option>
-            <option value="2">Fair</option>
-            <option value="3">Good</option>
-            <option value="4">Great</option>
-            <option value="5" selected>Stellar</option>
+          <select name="rating" id="selector">
+            <option value="1">No Go(1)</option>
+            <option value="2">Fair(2)</option>
+            <option value="3">Good(3)</option>
+            <option value="4">Great(4)</option>
+            <option value="5" selected>Stellar(5)</option>
           </select>
-          <br>
-          <input type="submit" value="Add Review">
+          <br><br>
+          <input type="submit" value="Add Review" id="review-submit">
         </form>
     </div>
 
     <div class="column">
-      <h2>Reviews</h2>
       <% if (venue.reviews.length) { %>
-
         <div class="reviews-container">
-
           <% let total=0 %>
             <% venue.reviews.forEach(function(r) { %>
               <% total +=r.rating %>
-
                 <div class="review">
                   <div class="review-user">
                     <img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer">
                     <%= r.userName %>
                   </div>
-                  <div>Wrote on 
+                  <div>reviewed on 
                     <%= r.createdAt.toLocaleDateString() %>:
                   </div>
                   <div>
                     <%= r.content %>
                   </div>
                   <div>Rating: 
-                    <%= r.rating %> <br>(1 = No Go, 2 = Fair, 3 = Good, 4 = Great, 5 = Stellar)
+                    <%= r.rating %> <br>
                   </div>
                   <br>
                   <div>
