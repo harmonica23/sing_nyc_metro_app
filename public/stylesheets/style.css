@@ -30,13 +30,62 @@ a:hover {
   height: 2vmin;
 }
 
+/* animate tagline */
+@keyframes textAnimation {
+  0% {
+    font-size: 6vmin;
+  }
+  50% {
+    font-size: 12vmin;
+  }
+  100% {
+    font-size: 6vmin;
+  }
+}
+
+@keyframes textBackgroundAnimation {
+  0% {
+    backdrop-filter: blur(0);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    border-radius: 2vmin; /* Adjust as needed */
+  }
+  50% {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    border-radius: 2vmin; /* Adjust as needed */
+  }
+  100% {
+    backdrop-filter: blur(0);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    border-radius: 2vmin; /* Adjust as needed */
+  }
+}
+
+.tagline-wrapper {
+  display: inline-block;
+  overflow: visible;
+}
+
+#tagline {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 6vmin;
+  transform: rotate(-12deg);
+  margin-left: 2vmin;
+  margin-top: 3vmin;
+  animation: textAnimation 2s ease-in-out, textBackgroundAnimation 2s ease-in-out;
+}
+
+
 section, a {
   margin-left: 2vmin;
   margin-right: 2vmin;
 }
 
 #venue-info {
-  color: rgb(155, 1, 1);
+  color: black;
   margin-left: 2vmin;
   margin-top: 1vmin;
 }
@@ -71,12 +120,6 @@ button:hover, #review-submit:hover {
   width: 48%;
 }
 
-#tagline {
-  font-family: 'Seaweed Script', cursive;
-  font-size: 6vmin;
-  transform: rotate(-12deg);
-  margin-left: 2vmin;
-}
 
 h1 {
   font-size: 7vmin;
@@ -93,7 +136,7 @@ h3 {
   align-items: center;
   background-color: rgba(0,0,0,0.5);
   padding: 3vmin;
-  height: 9vmin;
+  height: 8vmin;
   margin: 2vmin;
   justify-content: space-between;
   border-radius: 12px;
