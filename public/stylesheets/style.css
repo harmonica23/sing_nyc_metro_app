@@ -19,10 +19,24 @@ a {
   color: white;
   text-decoration: none;
   font-size: 5vmin;
+  position: relative;
+  display: inline-block;
 }
 
-a:hover {
-  color: rgb(155, 1, 1);
+a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: rgb(155, 1, 1);
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+a:hover:before{
+  width: 100%;
 }
 
 .login img {
@@ -47,19 +61,19 @@ a:hover {
   0% {
     backdrop-filter: blur(0);
     background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.8);
     border-radius: 2vmin; /* Adjust as needed */
   }
   50% {
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.2);
     border-radius: 2vmin; /* Adjust as needed */
   }
   100% {
     backdrop-filter: blur(0);
     background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.8);
     border-radius: 2vmin; /* Adjust as needed */
   }
 }
@@ -67,6 +81,7 @@ a:hover {
 .tagline-wrapper {
   display: inline-block;
   overflow: visible;
+  white-space: nowrap;
 }
 
 #tagline {
