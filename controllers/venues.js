@@ -2,7 +2,7 @@ const Venue = require('../models/venue');
 
 
 const areas = (req, res) => {
-    res.render('areas/main', {title: 'Areas'});
+    res.render('areas/main', {title: 'Venues by Area'});
 }
 
 const index = async (req, res) => {
