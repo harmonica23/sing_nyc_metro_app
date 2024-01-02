@@ -5,7 +5,7 @@
 
 - [Trello board](https://trello.com/invite/b/7Hvin0jo/ATTI16b9d49cf1f44c3cd53ae8b2c164a065B3DDEB60/sing-nyc-metro-app)
 - [ERD](https://drive.google.com/file/d/17vGbeIecMTpdqoRAoPrwGhiUu_rE0hk9/view?usp=sharing)
-- [Live site]() (to be deployed on Heroku upon completion)
+- [Live site](https://sing-nyc-metro-2798a6a27d62.herokuapp.com/) deployed on Heroku
 
 ### **_Technologies Used_**
 - HTML, CSS, and JavaScript
