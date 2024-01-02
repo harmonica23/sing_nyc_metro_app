@@ -23,7 +23,9 @@
 
 [Nav Bar Hover Animation](https://www.codingnepalweb.com/Hover-Animation-in-HTML-CSS/) by CodingNepal
 
-[**_Wireframe_**](https://www.figma.com/file/uFruB2uyPT3lMHBsNJFDsd/Sing!NYCMetro-Wireframe?type=design&node-id=0%3A1&mode=design&t=m56g8XE5HHSsaWJl-1)
+[Embeded Map API](https://developers.google.com/maps/documentation/embed/embedding-map#place_mode) inspiration
+
+[**_Figma Wireframe_**](https://www.figma.com/file/uFruB2uyPT3lMHBsNJFDsd/Sing!NYCMetro-Wireframe?type=design&node-id=0%3A1&mode=design&t=m56g8XE5HHSsaWJl-1)
 
 **Home page** with navigation to browse venues (read only if not logged in)
 ![landing page](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Home%20Page.png?raw=true)
@@ -45,8 +47,8 @@
 ![Add Venue](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Add%20Venue.png?raw=true)
 
 ### **_Stretch Goals_**
-- Map showing current location and location of venue when address is clicked
-- Google Maps API
+- Google Maps API - renders on each venue page to display venue location with option to get directions
+- Make venue url (provided by user) a live link 
 
 **Map View of Venue**
 ![Venue on Map](https://github.com/harmonica23/sing_nyc_metro_app/blob/main/Map%20View.png?raw=true)
