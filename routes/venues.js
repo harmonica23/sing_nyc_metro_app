@@ -5,7 +5,7 @@ const ensureLoggedIn = require('../config/ensureLoggedIn');
 
 
 router.get('/new', ensureLoggedIn, venuesCtrl.new);
-router.get('/:area', venuesCtrl.index); 
+router.get('/:area', venuesCtrl.index);
 router.get('/', venuesCtrl.areas);
 router.get('/show/:venueId', venuesCtrl.show);
 router.post('/', ensureLoggedIn, venuesCtrl.create);

@@ -1,11 +1,15 @@
 <%- include('../partials/header') %>
 
-<h1><%= title %></h1>
+    <h1>
+        <%= title %>
+    </h1>
 
-<% venuesByArea.forEach( v => { %>
-<h3><a href="/venues/show/<%= v._id %>"><%= v.venueName %></a></h3>
+    <% venuesByArea.forEach( v=> { %>
+        <h3><a href="/venues/show/<%= v._id %>">
+                <%= v.venueName %>
+            </a></h3>
 
-    <% } ) %>
+        <% } ) %>
 
 
-<%- include('../partials/footer') %>
+            <%- include('../partials/footer') %>

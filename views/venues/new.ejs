@@ -1,66 +1,68 @@
 <%- include('../partials/header') %>
 
-<section>
-    <form id="new-form" action="/venues" method="POST">
-    <h2 id="add-ven-hl">Add a venue to Sing!NYCMetro's database using the form below:</h2>
+    <section>
+        <form id="new-form" action="/venues" method="POST">
+            <h2 id="add-ven-hl">Add a venue to Sing!NYCMetro's database using the form below:</h2>
 
-<label>Venue:</label>
-    <input type="text" name="venueName">
-<br>
+            <label>Venue:</label>
+            <input type="text" name="venueName">
+            <br>
 
-<label>Area:</label>
-    <select name="area">
-        <option value="NYC">NYC</option>
-        <option value="Long-Island">Long Island</option>
-        <option value="Westchester">Westchester</option>
-        <option value="NJ-metro">NJ Metro</option>
-        <option value="CT-metro">CT Metro</option>
-      </select>
-<br>
+            <label>Area:</label>
+            <select name="area">
+                <option value="NYC">NYC</option>
+                <option value="Long-Island">Long Island</option>
+                <option value="Westchester">Westchester</option>
+                <option value="NJ-metro">NJ Metro</option>
+                <option value="CT-metro">CT Metro</option>
+            </select>
+            <br>
 
-<label>Address:</label>
-    <input type="text" name="address">
-<br>
+            <label>Address:</label>
+            <input type="text" name="address">
+            <br>
 
-<label>Website:</label>
-    <input type="text" name="website">
-<br>
+            <label>Website:</label>
+            <input type="text" name="website">
+            <br>
 
-<label>Phone:</label>
-    <input type="text" name="phone">
-<br>
+            <label>Phone:</label>
+            <input type="text" name="phone">
+            <br>
 
-<label>Karaoke happens:</label>
-    <select name="when">
-        <option value="saturdays">Saturdays</option>
-        <option value="sundays">Sundays</option>
-        <option value="mondays">Mondays</option>
-        <option value="tuesdays">Tuesdays</option>
-        <option value="wednesdays">Wednesdays</option>
-        <option value="thursdays">Thursdays</option>
-        <option value="fridays">Fridays</option>
-        <option value="open-hours">Open hours</option>
-        <option value="by-request">By Request</option>
-    </select>
-<br>
+            <label>Karaoke happens:</label>
+            <select name="when">
+                <option value="saturdays">Saturdays</option>
+                <option value="sundays">Sundays</option>
+                <option value="mondays">Mondays</option>
+                <option value="tuesdays">Tuesdays</option>
+                <option value="wednesdays">Wednesdays</option>
+                <option value="thursdays">Thursdays</option>
+                <option value="fridays">Fridays</option>
+                <option value="open-hours">Open hours</option>
+                <option value="by-request">By Request</option>
+            </select>
+            <br>
 
-<label>Frequency:</label>
-<select name="frequency">
-    <option value="daily">Daily</option>
-    <option value="weekly">Weekly</option>
-    <option value="monthly">Monthly</option>
-    <option value="special-event">Special Event</option>
-</select>
-<br>
+            <label>Frequency:</label>
+            <select name="frequency">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="special-event">Special Event</option>
+            </select>
+            <br>
 
-<label>Venue highlights:</label>
-    <input type="text" name="highlights">
-<br>
+            <label>Venue highlights:</label>
+            <input type="text" name="highlights">
+            <br>
 
-  <button type="submit" id="sub-but">Submit</button>
-</form>
-</section>
-<p><%= errorMsg %></p>
-</section> 
+            <button type="submit" id="sub-but">Submit</button>
+        </form>
+    </section>
+    <p>
+        <%= errorMsg %>
+    </p>
+    </section>
 
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>

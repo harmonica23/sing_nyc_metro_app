@@ -23,7 +23,7 @@ const reviewSchema = new Schema({
     timestamps: true
 });
 
-const venueSchema =  new Schema({
+const venueSchema = new Schema({
     venueName: String,
     address: String,
     website: String,

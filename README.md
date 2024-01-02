@@ -18,6 +18,7 @@
 - Add a new venue to an area
 - Add a review to a venue
 - Delete a review from a venue if user is the author
+- Bonus: map of venue and user can map there
 
 ### **_Credits_**
 

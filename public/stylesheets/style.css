@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,7 +25,7 @@ a {
   margin-right: 2vmin;
 }
 
-a:before{
+a:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -37,7 +37,7 @@ a:before{
   transition: all 0.4s ease;
 }
 
-a:hover:before{
+a:hover:before {
   width: 100%;
 }
 
@@ -56,9 +56,11 @@ a:hover:before{
   0% {
     font-size: 6vmin;
   }
+
   50% {
     font-size: 12vmin;
   }
+
   100% {
     font-size: 6vmin;
   }
@@ -69,19 +71,24 @@ a:hover:before{
     backdrop-filter: blur(0);
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.8);
-    border-radius: 2vmin; /* Adjust as needed */
+    border-radius: 2vmin;
+    /* Adjust as needed */
   }
+
   50% {
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.2);
-    border-radius: 2vmin; /* Adjust as needed */
+    border-radius: 2vmin;
+    /* Adjust as needed */
   }
+
   100% {
     backdrop-filter: blur(0);
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.8);
-    border-radius: 2vmin; /* Adjust as needed */
+    border-radius: 2vmin;
+    /* Adjust as needed */
   }
 }
 
@@ -110,7 +117,8 @@ a:hover:before{
   font-family: 'Seaweed Script', cursive;
 }
 
-button, #review-submit {
+button,
+#review-submit {
   padding: 1vmin;
   cursor: pointer;
   background-color: black;
@@ -118,10 +126,11 @@ button, #review-submit {
   border-radius: 5px;
   border: none;
   border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-button:hover, #review-submit:hover {
+button:hover,
+#review-submit:hover {
   background-color: rgb(155, 1, 1);
   color: white;
 }
@@ -146,22 +155,24 @@ h3 {
 }
 
 /* nav bar styling */
-.nav-links{
+.nav-links {
   display: flex;
   align-items: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 3vmin;
   height: 8vmin;
   margin: 2vmin;
   justify-content: space-between;
   border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.nav-links li{
+
+.nav-links li {
   list-style: none;
   margin: 2vmin;
 }
-.nav-links li a{
+
+.nav-links li a {
   position: relative;
   color: white;
   font-size: 3vmin;
@@ -169,7 +180,8 @@ h3 {
   padding: 1vmin;
   text-decoration: none;
 }
-.nav-links li a:before{
+
+.nav-links li a:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -180,20 +192,24 @@ h3 {
   border-radius: 20px;
   transition: all 0.4s ease;
 }
-.nav-links li a:hover:before{
+
+.nav-links li a:hover:before {
   width: 100%;
 }
-.nav-links li.center a:before{
+
+.nav-links li.center a:before {
   left: 50%;
   transform: translateX(-50%);
 }
-.nav-links li.forward a:before{
+
+.nav-links li.forward a:before {
   width: 100%;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s ease;
 }
-.nav-links li.forward a:hover:before{
+
+.nav-links li.forward a:hover:before {
   transform: scaleX(1);
   transform-origin: left;
 }
@@ -268,7 +284,8 @@ h3 {
   margin-top: 20px;
 }
 
-.text-box, #selector {
+.text-box,
+#selector {
   width: 100%;
   padding: 1vmin;
   box-sizing: border-box;
@@ -279,40 +296,40 @@ h3 {
 }
 
 /* #new-form */
-  #new-form {
-    max-width: 80vmin;
-    margin: 0 auto;
-    padding: 4vmin;
-    background: rgb(0, 0, 0, 0.7);
-    border-radius: 2vmin;
-    box-shadow: 0 0 2vmin rgba(0, 0, 0, 0.1);
-  }
+#new-form {
+  max-width: 80vmin;
+  margin: 0 auto;
+  padding: 4vmin;
+  background: rgb(0, 0, 0, 0.7);
+  border-radius: 2vmin;
+  box-shadow: 0 0 2vmin rgba(0, 0, 0, 0.1);
+}
 
-  #add-ven-hl {
-    color: white;
-    font-size: 2.2vmin;
-    margin-bottom: 2vmin;
-  }
+#add-ven-hl {
+  color: white;
+  font-size: 2.2vmin;
+  margin-bottom: 2vmin;
+}
 
-  label {
-    display: block;
-    margin-top: 2vmin;
-    font-weight: bold;
-    color: white;
-    font-size: 1.8vmin;
-  }
+label {
+  display: block;
+  margin-top: 2vmin;
+  font-weight: bold;
+  color: white;
+  font-size: 1.8vmin;
+}
 
-  input,
-  select {
-    width: 100%;
-    padding: 1vmin;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 2vmin;
-    margin-top: 1vmin;
-    font-size: 1.8vmin;
-  }
+input,
+select {
+  width: 100%;
+  padding: 1vmin;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2vmin;
+  margin-top: 1vmin;
+  font-size: 1.8vmin;
+}
 
-  #sub-but {
-    margin: 2vmin auto;
-  }
+#sub-but {
+  margin: 2vmin auto;
+}
