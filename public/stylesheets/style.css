@@ -58,7 +58,7 @@ a:hover:before {
   }
 
   50% {
-    font-size: 12vmin;
+    font-size: 7.5vmin;
   }
 
   100% {
@@ -69,26 +69,23 @@ a:hover:before {
 @keyframes textBackgroundAnimation {
   0% {
     backdrop-filter: blur(0);
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.2);
     border-radius: 2vmin;
-    /* Adjust as needed */
   }
 
   50% {
     backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.8);
     border-radius: 2vmin;
-    /* Adjust as needed */
   }
 
   100% {
     backdrop-filter: blur(0);
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20vmin rgba(255, 255, 255, 0.2);
     border-radius: 2vmin;
-    /* Adjust as needed */
   }
 }
 
@@ -175,7 +172,7 @@ h3 {
 .nav-links li a {
   position: relative;
   color: white;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   font-weight: 500;
   padding: 1vmin;
   text-decoration: none;
@@ -217,7 +214,7 @@ h3 {
 /* review form styling */
 .reviews-container {
   border: 1px solid #ddd;
-  background: rgb(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   margin-top: 20px;
   color: white;
@@ -279,7 +276,7 @@ h3 {
 #add-review-form {
   color: white;
   border: 1px solid #ddd;
-  background: rgb(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   margin-top: 20px;
 }
@@ -300,7 +297,7 @@ h3 {
   max-width: 80vmin;
   margin: 0 auto;
   padding: 4vmin;
-  background: rgb(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 2vmin;
   box-shadow: 0 0 2vmin rgba(0, 0, 0, 0.1);
 }
@@ -333,3 +330,8 @@ select {
 #sub-but {
   margin: 2vmin auto;
 }
+
+.pgContent {
+  margin-left: 2vmin;
+}
+
