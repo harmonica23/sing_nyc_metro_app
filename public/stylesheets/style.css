@@ -21,6 +21,8 @@ a {
   font-size: 5vmin;
   position: relative;
   display: inline-block;
+  margin-left: 2vmin;
+  margin-right: 2vmin;
 }
 
 a:before{
@@ -37,6 +39,11 @@ a:before{
 
 a:hover:before{
   width: 100%;
+}
+
+#venueLink {
+  margin: 0;
+  font-size: 3vmin;
 }
 
 .login img {
@@ -93,12 +100,6 @@ a:hover:before{
   animation: textAnimation 2s ease-in-out, textBackgroundAnimation 2s ease-in-out;
 }
 
-
-section, a {
-  margin-left: 2vmin;
-  margin-right: 2vmin;
-}
-
 #venue-info {
   color: black;
   margin-left: 2vmin;
@@ -134,7 +135,6 @@ button:hover, #review-submit:hover {
 .column {
   width: 48%;
 }
-
 
 h1 {
   font-size: 7vmin;

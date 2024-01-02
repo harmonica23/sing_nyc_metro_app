@@ -6,12 +6,13 @@
       <div id="venue-info">
         <h3><%= venue.area %> area</h3>
         <h3><%= venue.address %></h3>
-        <h3><%= venue.website %></h3>
+        <a href="http://<%= venue.website %>" target="_blank" id="venueLink"><%= venue.website %></a>
         <h3><%= venue.phone %></h3>
-        <h3>Karaoke days: <%= venue.when %></h3>
+        <h3>Karaoke days: <%= venue.when.charAt(0).toUpperCase() + venue.when.slice(1) %></h3>
         <h3>Frequency: <%= venue.other %></h3>
         <h3>Venue highlights: <%= venue.highlights %></h3>
       </div>
+
 
       <br>
       <section id="reviewForm">
