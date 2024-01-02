@@ -13,7 +13,21 @@
         <h3>Venue highlights: <%= venue.highlights %></h3>
       </div>
 
+      <br>
+      
+      <iframe
+        width=100%
+        height=55%
+        style="border:0"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="<%= 'https://www.google.com/maps/embed/v1/place?key=AIzaSyA3ZfegZhbagwmIXR4EKTtYckcQUvEwxHE&q=' + encodeURIComponent(venue.address) %>"
+      ></iframe>
+      
 
+    </div>
+
+    <div class="column">
       <br>
       <section id="reviewForm">
         <form id="add-review-form" method="POST" action="/reviews/venues/<%= venue._id %>/reviews">
@@ -31,9 +45,6 @@
           <br><br>
           <input type="submit" value="Add Review" id="review-submit">
         </form>
-    </div>
-
-    <div class="column">
       <% if (venue.reviews.length) { %>
         <div class="reviews-container">
           <% let total=0 %>
@@ -71,8 +82,6 @@
                       </strong></div>
                   </div>
         </div>
-
-
         <% } else { %>
           <h5>No Reviews Yet</h5>
           <% } %>
