@@ -15,6 +15,15 @@ body {
   height: 100vh;
 }
 
+h1 {
+  font-size: 7vmin;
+  margin-left: 2vmin;
+}
+
+h3 {
+  font-size: 2.7vmin;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -132,24 +141,7 @@ button:hover,
   color: white;
 }
 
-.main-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-}
 
-.column {
-  width: 48%;
-}
-
-h1 {
-  font-size: 7vmin;
-  margin-left: 2vmin;
-}
-
-h3 {
-  font-size: 2.7vmin;
-}
 
 /* nav bar styling */
 .nav-links {
@@ -295,7 +287,9 @@ h3 {
 /* #new-form */
 #new-form {
   max-width: 80vmin;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4vmin;
   padding: 4vmin;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 2vmin;
@@ -335,3 +329,19 @@ select {
   margin-left: 2vmin;
 }
 
+/* show page view */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.column {
+  width: 48%;
+}
+
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+  }
+}
