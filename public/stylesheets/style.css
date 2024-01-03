@@ -348,4 +348,11 @@ select {
   .main-content {
     display: unset;
   }
+  .text-box,
+#selector {
+  font-size: 4vmin;
+}
+label {
+  font-size: 3vmin;
+}
 }
