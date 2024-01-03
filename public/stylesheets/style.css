@@ -286,7 +286,7 @@ button:hover,
 
 /* #new-form */
 #new-form {
-  max-width: 80vmin;
+  max-width: 90vmin;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4vmin;
@@ -342,6 +342,10 @@ select {
 
 @media screen and (max-width: 767px) {
   .column {
-    width: 100%;
+    width: 85%;
+    margin: auto;
+  }
+  .main-content {
+    display: unset;
   }
 }
