@@ -6,12 +6,12 @@
         </h1>
 
     </div>
-        <% venuesByArea.forEach( v=> { %>
-            <h3 class="pgContent"><a href="/venues/show/<%= v._id %>">
-                    <%= v.venueName %>
-                </a></h3>
+    <% venuesByArea.forEach( v=> { %>
+        <h3 class="pgContent"><a href="/venues/show/<%= v._id %>">
+                <%= v.venueName %>
+            </a></h3>
 
-    <% } ) %>
+        <% } ) %>
 
 
-        <%- include('../partials/footer') %>
+            <%- include('../partials/footer') %>
